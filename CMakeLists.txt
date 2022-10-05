@@ -9,6 +9,7 @@ set(CMAKE_CXX_STANDARD 20)
 
 
 add_subdirectory(source)
+add_subdirectory(tests)
 
 
 #include_directories(${Testing_Assembly_w_GTest_SOURCE_DIR}/include)
