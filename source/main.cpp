@@ -16,5 +16,9 @@ int main()
 
     std::cout << "The value given by fooBar is: " << retVal << std::endl;
 
+    println("Hallo Welt");
+
+    println("I'm Printing lines of text from C++ with Assembly!!!");
+
     return 0;
 }

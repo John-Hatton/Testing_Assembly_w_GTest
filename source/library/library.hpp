@@ -18,6 +18,8 @@ extern "C"
 
         long fooBar();
 
+        void println(const char*);
+
 #ifdef __cplusplus
 } //End of extern "C" bloc
 #endif //__cplusplus
