@@ -24,27 +24,20 @@ bits 64
 
 %macro printLn 1
 
-        push    rbp
-
         mov     rdi, fmtln
         mov     rsi, %1
         xor     rax, rax
         call    printf
-
-        pop     rbp
 
 %endmacro
 
 
 println:
 
-        xor     rbx, rbx
         mov     rbx, rdi
-
         printLn rbx
 
         ret
-
 
 fooBar:
 
