@@ -7,7 +7,7 @@ bits 64
 
 fooBar:
 
-        mov     rax, 011101b
+        mov     rax, 011101b ; 29 in Decimal
 
 
 

@@ -13,5 +13,11 @@ TEST(fooBar_Test, Demonstrate_Whether_FooBar_Is_Valid)
 {
     long x = fooBar();
 
-    EXPECT_EQ(x, 31);
+#ifndef DEBUG
+    EXPECT_EQ(x, 29);
+#endif
+
+#ifdef DEBUG
+    EXPECT_EQ(x, 31); // Remember, my DEBUG flag in ASM adds two. See my library.asm file for more...
+#endif
 }
