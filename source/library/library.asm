@@ -7,6 +7,7 @@
 
 
 msg:    db "Hallo Welt!", 10, 0
+debmsg:    db "Debug Mode is On!!!", 10, 0
 
 
 fmt:    db "%s", 0
@@ -43,10 +44,10 @@ fooBar:
 
         mov     rax, 11101b
 
-        ;println fmtln, msg
+
 
         %ifdef DEBUG
-        add     rax, 2
+        printLn     debmsg
         %endif
 
         ret
