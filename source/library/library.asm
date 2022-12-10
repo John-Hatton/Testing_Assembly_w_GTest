@@ -23,7 +23,7 @@ bits 64
 
 
 
-%macro printLn 1
+%macro _println 1
 
         mov     rdi, fmtln
         mov     rsi, %1
@@ -36,7 +36,7 @@ bits 64
 println:
 
         mov     rbx, rdi
-        printLn rbx
+        _println rbx
 
         ret
 
@@ -47,7 +47,7 @@ fooBar:
 
 
         %ifdef DEBUG
-        printLn     debmsg
+        _println     debmsg
         %endif
 
         ret
